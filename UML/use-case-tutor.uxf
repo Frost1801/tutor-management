@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>220</x>
-      <y>350</y>
-      <w>80</w>
-      <h>110</h>
+      <x>64</x>
+      <y>304</y>
+      <w>64</w>
+      <h>88</h>
     </coordinates>
-    <panel_attributes>Candidato</panel_attributes>
+    <panel_attributes>Candidate</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>210</x>
-      <y>730</y>
-      <w>100</w>
-      <h>110</h>
+      <x>64</x>
+      <y>608</y>
+      <w>64</w>
+      <h>88</h>
     </coordinates>
-    <panel_attributes>Responsabile</panel_attributes>
+    <panel_attributes>Manager</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
-      <y>180</y>
-      <w>600</w>
-      <h>670</h>
+      <x>240</x>
+      <y>168</y>
+      <w>480</w>
+      <h>616</h>
     </coordinates>
-    <panel_attributes>Piattaforma tutoraggio
+    <panel_attributes>Tutoring Platform
 halign=left</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>230</x>
-      <y>170</y>
-      <w>60</w>
-      <h>110</h>
+      <x>72</x>
+      <y>160</y>
+      <w>48</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Tutor</panel_attributes>
     <additional_attributes/>
@@ -49,32 +49,32 @@ halign=left</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>220</x>
-      <y>530</y>
-      <w>80</w>
-      <h>110</h>
+      <x>72</x>
+      <y>448</y>
+      <w>48</w>
+      <h>88</h>
     </coordinates>
-    <panel_attributes>Studente</panel_attributes>
+    <panel_attributes>Student</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>500</x>
-      <y>250</y>
-      <w>120</w>
-      <h>40</h>
+      <x>288</x>
+      <y>224</y>
+      <w>96</w>
+      <h>32</h>
     </coordinates>
-    <panel_attributes>Registrazione</panel_attributes>
+    <panel_attributes>Register</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>510</x>
-      <y>320</y>
-      <w>120</w>
-      <h>40</h>
+      <x>296</x>
+      <y>280</y>
+      <w>96</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>Login</panel_attributes>
     <additional_attributes/>
@@ -82,23 +82,118 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>520</x>
-      <y>450</y>
-      <w>120</w>
-      <h>40</h>
+      <x>296</x>
+      <y>336</y>
+      <w>96</w>
+      <h>32</h>
     </coordinates>
-    <panel_attributes>Login</panel_attributes>
+    <panel_attributes>Book Lesson</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>510</x>
-      <y>390</y>
-      <w>120</w>
-      <h>40</h>
+      <x>304</x>
+      <y>472</y>
+      <w>96</w>
+      <h>32</h>
     </coordinates>
-    <panel_attributes/>
+    <panel_attributes>View Lessons
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>336</x>
+      <y>424</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Cancel Booking
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>296</x>
+      <y>528</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Submit Application
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>288</x>
+      <y>592</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>View Notifications
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>288</x>
+      <y>632</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Schedule Lesson</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>480</x>
+      <y>632</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Edit Lesson</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>376</x>
+      <y>632</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>288</x>
+      <y>672</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Select Candidate
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>288</x>
+      <y>712</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>View Payments
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
