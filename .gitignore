@@ -1,0 +1,10 @@
+# Ignore IDE-specific files and directories
+.idea/
+*.iml
+
+# Ignore compiled output
+out/
+
+# Ignore build artifacts
+target/
+build/
