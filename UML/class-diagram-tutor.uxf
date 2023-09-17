@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>77</x>
+      <y>903</y>
+      <w>1197</w>
+      <h>770</h>
+    </coordinates>
+    <panel_attributes>DomainModel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>70</x>
+      <y>0</y>
+      <w>973</w>
+      <h>392</h>
+    </coordinates>
+    <panel_attributes>BusinessLogic</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>70</x>
+      <y>434</y>
+      <w>973</w>
+      <h>392</h>
+    </coordinates>
+    <panel_attributes>DataAccess</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>931</x>
+      <y>1015</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>/FactoryPattern/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>980</y>
+      <w>147</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>/User/
+--
+-firstName: string
+-lastName: string
+-email: string
+-id : int
+--
++getNotifications()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>273</x>
+      <y>1211</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>/User/
+--
+-firstName: string
+-lastName: string
+-email: string
+-id : int
+--
++getNotifications()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>588</x>
+      <y>1211</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>/User/
+--
+-firstName: string
+-lastName: string
+-email: string
+-id : int
+--
++getNotifications()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>119</x>
+      <y>1211</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>/User/
+--
+-firstName: string
+-lastName: string
+-email: string
+-id : int
+--
++getNotifications()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>434</x>
+      <y>1211</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>/User/
+--
+-firstName: string
+-lastName: string
+-email: string
+-id : int
+--
++getNotifications()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>413</x>
+      <y>1064</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>182</x>
+      <y>1113</y>
+      <w>483</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;670.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>182</x>
+      <y>1120</y>
+      <w>21</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>1120</y>
+      <w>21</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>1120</y>
+      <w>21</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>644</x>
+      <y>1120</y>
+      <w>21</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
