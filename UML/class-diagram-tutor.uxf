@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="13.3">
+<diagram program="umlet" version="15.1">
   <zoom_level>7</zoom_level>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>77</x>
+      <x>42</x>
       <y>903</y>
       <w>1197</w>
       <h>770</h>
@@ -15,7 +15,7 @@
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>70</x>
+      <x>35</x>
       <y>0</y>
       <w>973</w>
       <h>392</h>
@@ -26,7 +26,7 @@
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>70</x>
+      <x>35</x>
       <y>434</y>
       <w>973</w>
       <h>392</h>
@@ -37,7 +37,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>931</x>
+      <x>896</x>
       <y>1015</y>
       <w>70</w>
       <h>21</h>
@@ -49,7 +49,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
+      <x>315</x>
       <y>980</y>
       <w>147</w>
       <h>91</h>
@@ -68,83 +68,42 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>273</x>
+      <x>553</x>
       <y>1211</y>
       <w>147</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>/User/
+    <panel_attributes>TutorManager
 --
--firstName: string
--lastName: string
--email: string
--id : int
+
 --
-+getNotifications()
++viewAllPayment()
++viewPaymentByID(id)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>588</x>
+      <x>84</x>
       <y>1211</y>
       <w>147</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>/User/
+    <panel_attributes>Student
 --
--firstName: string
--lastName: string
--email: string
--id : int
+
 --
-+getNotifications()
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>119</x>
-      <y>1211</y>
-      <w>147</w>
-      <h>84</h>
-    </coordinates>
-    <panel_attributes>/User/
---
--firstName: string
--lastName: string
--email: string
--id : int
---
-+getNotifications()
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>434</x>
-      <y>1211</y>
-      <w>147</w>
-      <h>84</h>
-    </coordinates>
-    <panel_attributes>/User/
---
--firstName: string
--lastName: string
--email: string
--id : int
---
-+getNotifications()
++bookLesson(id)
++viewLessonBySubject(subject)
++viewLessonByDate(date)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>413</x>
+      <x>378</x>
       <y>1064</y>
       <w>21</w>
       <h>77</h>
@@ -155,7 +114,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>182</x>
+      <x>147</x>
       <y>1113</y>
       <w>483</w>
       <h>28</h>
@@ -166,7 +125,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>182</x>
+      <x>147</x>
       <y>1120</y>
       <w>21</w>
       <h>105</h>
@@ -177,7 +136,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>343</x>
+      <x>308</x>
       <y>1120</y>
       <w>21</w>
       <h>105</h>
@@ -188,7 +147,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
+      <x>455</x>
       <y>1120</y>
       <w>21</w>
       <h>105</h>
@@ -199,12 +158,47 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>644</x>
+      <x>609</x>
       <y>1120</y>
       <w>21</w>
       <h>105</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>245</x>
+      <y>1211</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Tutor
+--
+-hours : float
+--
++scheduleLesson(date, time)
++editLessonDate(date)
++editLessonTime(time)
++viewMyLessons()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>399</x>
+      <y>1211</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Candidate
+--
+
+--
++applyForRole(subject, uni, avg) </panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
