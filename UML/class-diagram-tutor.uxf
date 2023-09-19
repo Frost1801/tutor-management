@@ -24,14 +24,14 @@
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>8</zoom_level>
+  <zoom_level>5</zoom_level>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1400</x>
+      <x>1075</x>
       <y>0</y>
-      <w>1368</w>
-      <h>880</h>
+      <w>855</w>
+      <h>550</h>
     </coordinates>
     <panel_attributes>DomainModel</panel_attributes>
     <additional_attributes/>
@@ -39,10 +39,10 @@
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>72</x>
-      <y>184</y>
-      <w>1112</w>
-      <h>448</h>
+      <x>245</x>
+      <y>115</y>
+      <w>695</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>BusinessLogic</panel_attributes>
     <additional_attributes/>
@@ -50,10 +50,10 @@
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>280</x>
-      <y>264</y>
-      <w>1112</w>
-      <h>448</h>
+      <x>360</x>
+      <y>115</y>
+      <w>695</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>DataAccess</panel_attributes>
     <additional_attributes/>
@@ -61,10 +61,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>1552</y>
-      <w>200</w>
-      <h>80</h>
+      <x>830</x>
+      <y>970</y>
+      <w>125</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>UserFactory
 --
@@ -77,10 +77,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>392</x>
-      <y>1304</y>
-      <w>168</w>
-      <h>104</h>
+      <x>445</x>
+      <y>815</y>
+      <w>105</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>/User/
 --
@@ -96,28 +96,31 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>664</x>
-      <y>1568</y>
-      <w>184</w>
-      <h>96</h>
+      <x>615</x>
+      <y>980</y>
+      <w>150</w>
+      <h>75</h>
     </coordinates>
     <panel_attributes>TutorManager
 --
 -managerSingleton: TutorManager
+-notificationsHandler: NotificationsHandler
+-paymentHandler : PaymentHandler
 --
 +getInstance(): TutorManager
 +viewAllDuePayments()
 +viewPaymentByID(id)
++sendApplicationResult(id, result)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>56</x>
-      <y>1568</y>
-      <w>168</w>
-      <h>96</h>
+      <x>235</x>
+      <y>980</y>
+      <w>105</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>Student
 --
@@ -132,10 +135,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>184</x>
-      <y>1400</y>
-      <w>552</w>
-      <h>184</h>
+      <x>315</x>
+      <y>875</y>
+      <w>345</w>
+      <h>115</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>360.0;10.0;360.0;150.0;240.0;150.0;240.0;210.0;240.0;150.0;10.0;150.0;10.0;210.0;10.0;150.0;460.0;150.0;460.0;210.0;460.0;150.0;670.0;150.0;670.0;210.0;670.0;150.0</additional_attributes>
@@ -143,10 +146,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>248</x>
-      <y>1568</y>
-      <w>216</w>
-      <h>96</h>
+      <x>355</x>
+      <y>980</y>
+      <w>135</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>Tutor
 --
@@ -163,10 +166,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>488</x>
-      <y>1568</y>
-      <w>168</w>
-      <h>96</h>
+      <x>505</x>
+      <y>980</y>
+      <w>105</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>Candidate
 --
@@ -178,21 +181,21 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>752</x>
-      <y>1528</y>
-      <w>136</w>
-      <h>208</h>
+      <x>670</x>
+      <y>955</y>
+      <w>110</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;170.0;10.0;240.0;150.0;240.0;150.0;10.0;60.0;10.0;60.0;50.0</additional_attributes>
+    <additional_attributes>10.0;200.0;10.0;240.0;200.0;240.0;200.0;10.0;60.0;10.0;60.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1016</x>
-      <y>1328</y>
-      <w>200</w>
-      <h>80</h>
+      <x>835</x>
+      <y>830</y>
+      <w>125</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>/FactoryPattern/
 --
@@ -205,10 +208,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1104</x>
-      <y>1400</y>
-      <w>24</w>
-      <h>168</h>
+      <x>890</x>
+      <y>875</y>
+      <w>15</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
@@ -216,10 +219,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>688</x>
-      <y>856</y>
-      <w>168</w>
-      <h>120</h>
+      <x>175</x>
+      <y>520</y>
+      <w>105</w>
+      <h>75</h>
     </coordinates>
     <panel_attributes>/Subject/
 --
@@ -235,10 +238,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>688</x>
-      <y>1032</y>
-      <w>168</w>
-      <h>136</h>
+      <x>175</x>
+      <y>630</y>
+      <w>105</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>Lesson
 --
@@ -258,10 +261,10 @@ getState(): LocalDateTime
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>968</y>
-      <w>24</w>
-      <h>80</h>
+      <x>220</x>
+      <y>590</y>
+      <w>15</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -269,14 +272,15 @@ getState(): LocalDateTime
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1000</x>
-      <y>1040</y>
-      <w>168</w>
-      <h>120</h>
+      <x>370</x>
+      <y>635</y>
+      <w>140</w>
+      <h>75</h>
     </coordinates>
     <panel_attributes>LessonObserver
 --
-lessonState : LocalDateTime
+-lessonState : LocalDateTime
+-notificationsHandler: NotificationsHandler
 --
 +update()
 
@@ -286,10 +290,10 @@ lessonState : LocalDateTime
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1000</x>
-      <y>856</y>
-      <w>168</w>
-      <h>120</h>
+      <x>370</x>
+      <y>520</y>
+      <w>105</w>
+      <h>75</h>
     </coordinates>
     <panel_attributes>/Observer/
 --
@@ -303,10 +307,10 @@ lessonState : LocalDateTime
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1072</x>
-      <y>968</y>
-      <w>24</w>
-      <h>88</h>
+      <x>415</x>
+      <y>590</y>
+      <w>15</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -314,10 +318,10 @@ lessonState : LocalDateTime
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>848</x>
-      <y>904</y>
-      <w>168</w>
-      <h>32</h>
+      <x>275</x>
+      <y>550</y>
+      <w>105</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n</panel_attributes>
@@ -326,13 +330,132 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>848</x>
-      <y>1080</y>
-      <w>168</w>
-      <h>32</h>
+      <x>275</x>
+      <y>660</y>
+      <w>105</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n</panel_attributes>
     <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>545</x>
+      <y>635</y>
+      <w>105</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>NotificationsHandler
+--
+
+--
++sendNotification(userID, text)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>505</x>
+      <y>670</y>
+      <w>50</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>675</x>
+      <y>630</y>
+      <w>145</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>PaymentHandler
+--
+-tutors : Tutor []
+--
++getPaymentDueById(id) : float
++getAllPaymentsDue () : 
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>490</y>
+      <w>205</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>RegistrationHandler
+--
+-userFactory: UserFactory
+-notificationHandler : NotificationHandler
+
+--
++registerUser(type, firstName, lastName, emailtype): User
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>895</y>
+      <w>205</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>LoginHandler
+--
+--
++loginUser(id, password)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>595</x>
+      <y>705</y>
+      <w>185</w>
+      <h>285</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+</panel_attributes>
+    <additional_attributes>350.0;10.0;350.0;160.0;10.0;160.0;10.0;10.0;10.0;160.0;150.0;160.0;150.0;550.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>955</x>
+      <y>685</y>
+      <w>205</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>LoginHandler
+--
+--
++loginUser(id, password)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>565</y>
+      <w>15</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
   </element>
 </diagram>
