@@ -357,7 +357,7 @@ Functionalities</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>1112</x>
-      <y>400</y>
+      <y>368</y>
       <w>96</w>
       <h>32</h>
     </coordinates>
@@ -368,12 +368,24 @@ Functionalities</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>1112</x>
-      <y>368</y>
+      <y>336</y>
       <w>96</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>Institutional Mail</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>344</y>
+      <w>112</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;120.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -388,22 +400,10 @@ Functionalities</panel_attributes>
     <additional_attributes>10.0;50.0;120.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1016</x>
-      <y>400</y>
-      <w>112</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLUseCase</id>
     <coordinates>
       <x>1112</x>
-      <y>432</y>
+      <y>400</y>
       <w>96</w>
       <h>32</h>
     </coordinates>
@@ -414,13 +414,13 @@ Functionalities</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1016</x>
-      <y>408</y>
+      <y>400</y>
       <w>112</w>
-      <h>56</h>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;50.0</additional_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -511,5 +511,28 @@ Functionalities</panel_attributes>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;90.0;550.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1112</x>
+      <y>440</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Check Credentials</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>440</y>
+      <w>112</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
   </element>
 </diagram>
