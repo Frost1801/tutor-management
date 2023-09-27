@@ -24,14 +24,14 @@
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>6</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>714</x>
-      <y>1164</y>
-      <w>126</w>
-      <h>66</h>
+      <x>780</x>
+      <y>1940</y>
+      <w>210</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>/User/
 --
@@ -47,10 +47,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>918</x>
-      <y>1332</y>
-      <w>180</w>
-      <h>90</h>
+      <x>1120</x>
+      <y>2220</y>
+      <w>300</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>Manager
 --
@@ -64,10 +64,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>462</x>
-      <y>1332</y>
-      <w>126</w>
-      <h>72</h>
+      <x>360</x>
+      <y>2220</y>
+      <w>210</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Student
 --
@@ -81,10 +81,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>558</x>
-      <y>1224</y>
-      <w>414</w>
-      <h>120</h>
+      <x>520</x>
+      <y>2040</y>
+      <w>690</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>360.0;10.0;360.0;120.0;240.0;120.0;240.0;180.0;240.0;120.0;10.0;120.0;10.0;180.0;10.0;120.0;460.0;120.0;460.0;180.0;460.0;120.0;670.0;120.0;670.0;180.0;670.0;120.0</additional_attributes>
@@ -92,15 +92,16 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>870</x>
-      <y>798</y>
-      <w>162</w>
-      <h>96</h>
+      <x>1010</x>
+      <y>1320</y>
+      <w>410</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>TutorController
 --
 
 --
++addTutor(firstName, lastName, email,password, id, subject)
 +addLesson(date, time): void 
 +deleteLesson(lessonId): 
 +editLessonDate(lessonId,date): boolean
@@ -114,10 +115,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>786</x>
-      <y>1332</y>
-      <w>126</w>
-      <h>72</h>
+      <x>900</x>
+      <y>2220</y>
+      <w>210</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Candidate
 --
@@ -129,10 +130,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>984</x>
-      <y>1302</y>
-      <w>132</w>
-      <h>156</h>
+      <x>1230</x>
+      <y>2170</y>
+      <w>220</w>
+      <h>260</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;200.0;10.0;240.0;200.0;240.0;200.0;10.0;60.0;10.0;60.0;50.0</additional_attributes>
@@ -140,10 +141,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
-      <y>1332</y>
-      <w>126</w>
-      <h>78</h>
+      <x>40</x>
+      <y>2220</y>
+      <w>210</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>Lesson
 --
@@ -160,10 +161,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1206</x>
-      <y>798</y>
-      <w>180</w>
-      <h>90</h>
+      <x>1750</x>
+      <y>1330</y>
+      <w>300</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>ManagerController
 --
@@ -178,10 +179,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1050</x>
-      <y>798</y>
-      <w>126</w>
-      <h>72</h>
+      <x>1470</x>
+      <y>1340</y>
+      <w>210</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>CandidateController
 --
@@ -193,10 +194,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>618</x>
-      <y>1332</y>
-      <w>162</w>
-      <h>72</h>
+      <x>620</x>
+      <y>2220</y>
+      <w>270</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Tutor
 --
@@ -210,16 +211,16 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>570</x>
-      <y>792</y>
-      <w>264</w>
-      <h>90</h>
+      <x>540</x>
+      <y>1320</y>
+      <w>440</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>StudentController
 --
 
 --
-+addStudent(firstname, lastname, email, id, section, year)
++addStudent(firstname, lastname, email, password,id, section, year)
 +bookLesson(id): boolean
 +viewLessonBySubject(subject)
 +viewLessonByDate(date)
@@ -229,23 +230,23 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>618</x>
-      <y>180</y>
-      <w>126</w>
-      <h>42</h>
+      <x>620</x>
+      <y>300</y>
+      <w>210</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
-DAO&lt;&gt;
+DAO&lt;Lesson&gt;
 --</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>834</x>
+      <x>980</x>
       <y>0</y>
-      <w>126</w>
-      <h>114</h>
+      <w>210</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
 DAO
@@ -263,10 +264,10 @@ DAO
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>672</x>
-      <y>108</y>
-      <w>228</w>
-      <h>84</h>
+      <x>710</x>
+      <y>180</y>
+      <w>380</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>360.0;10.0;10.0;120.0</additional_attributes>
@@ -274,10 +275,10 @@ DAO
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>618</x>
-      <y>312</y>
-      <w>126</w>
-      <h>48</h>
+      <x>620</x>
+      <y>520</y>
+      <w>210</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>LessonDAO
 --
@@ -290,10 +291,10 @@ DAO
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>672</x>
-      <y>216</y>
-      <w>18</w>
-      <h>108</h>
+      <x>710</x>
+      <y>360</y>
+      <w>30</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
@@ -301,10 +302,10 @@ DAO
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>246</x>
-      <y>576</y>
-      <w>126</w>
-      <h>90</h>
+      <x>0</x>
+      <y>960</y>
+      <w>210</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
 /Subject/
@@ -321,10 +322,10 @@ DAO
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>660</y>
-      <w>18</w>
-      <h>60</h>
+      <x>90</x>
+      <y>1100</y>
+      <w>30</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -332,10 +333,10 @@ DAO
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>480</x>
-      <y>576</y>
-      <w>126</w>
-      <h>90</h>
+      <x>390</x>
+      <y>960</y>
+      <w>210</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
 /Observer/
@@ -350,10 +351,10 @@ DAO
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>528</x>
-      <y>660</y>
-      <w>24</w>
-      <h>684</h>
+      <x>470</x>
+      <y>1100</y>
+      <w>40</w>
+      <h>1140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>20.0;10.0;10.0;1120.0</additional_attributes>
@@ -361,10 +362,10 @@ DAO
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>366</x>
-      <y>612</y>
-      <w>126</w>
-      <h>24</h>
+      <x>200</x>
+      <y>1020</y>
+      <w>210</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n</panel_attributes>
@@ -373,17 +374,17 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>978</x>
-      <y>522</y>
-      <w>126</w>
-      <h>90</h>
+      <x>1240</x>
+      <y>900</y>
+      <w>370</w>
+      <h>150</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+    <panel_attributes>&lt;&lt;Abstract&gt;&gt;
 /UserController/
 --
 
 --
-+addUser (firstName, lastName, email, id)
++addUser (firstName, lastName, email,password, id)
 +removeUser(id) : bool
 +getUser(id) : User
 +getAll() : User []</panel_attributes>
@@ -392,10 +393,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>822</x>
-      <y>678</y>
-      <w>114</w>
-      <h>18</h>
+      <x>960</x>
+      <y>1130</y>
+      <w>190</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>UserController&lt;Student&gt;</panel_attributes>
     <additional_attributes/>
@@ -403,10 +404,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>948</x>
-      <y>678</y>
-      <w>114</w>
-      <h>18</h>
+      <x>1170</x>
+      <y>1130</y>
+      <w>190</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>UserController&lt;Tutor&gt;</panel_attributes>
     <additional_attributes/>
@@ -414,10 +415,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1074</x>
-      <y>678</y>
-      <w>114</w>
-      <h>18</h>
+      <x>1380</x>
+      <y>1130</y>
+      <w>190</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>UserController&lt;Candidate&gt;</panel_attributes>
     <additional_attributes/>
@@ -425,10 +426,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1200</x>
-      <y>678</y>
-      <w>114</w>
-      <h>18</h>
+      <x>1590</x>
+      <y>1130</y>
+      <w>190</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>UserController&lt;Manager&gt;</panel_attributes>
     <additional_attributes/>
@@ -436,10 +437,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>690</x>
-      <y>690</y>
-      <w>198</w>
-      <h>114</h>
+      <x>740</x>
+      <y>1150</y>
+      <w>330</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>310.0;10.0;10.0;170.0</additional_attributes>
@@ -447,87 +448,87 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>948</x>
-      <y>690</y>
-      <w>66</w>
-      <h>120</h>
+      <x>1140</x>
+      <y>1150</y>
+      <w>140</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>120.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1104</x>
-      <y>690</y>
-      <w>36</w>
-      <h>120</h>
+      <x>1460</x>
+      <y>1150</y>
+      <w>130</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>40.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;110.0;190.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1254</x>
-      <y>690</y>
-      <w>54</w>
-      <h>120</h>
+      <x>1680</x>
+      <y>1150</y>
+      <w>240</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;220.0;180.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>876</x>
-      <y>606</y>
-      <w>174</w>
-      <h>84</h>
+      <x>1050</x>
+      <y>1040</y>
+      <w>380</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>270.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>360.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1032</x>
-      <y>606</y>
-      <w>108</w>
-      <h>84</h>
+      <x>1400</x>
+      <y>1040</y>
+      <w>90</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;160.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;70.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>996</x>
-      <y>606</y>
-      <w>54</w>
-      <h>84</h>
+      <x>1250</x>
+      <y>1040</y>
+      <w>180</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>70.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>160.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1032</x>
-      <y>606</y>
-      <w>234</w>
-      <h>84</h>
+      <x>1400</x>
+      <y>1040</y>
+      <w>300</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;370.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;280.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>246</x>
-      <y>708</y>
-      <w>168</w>
-      <h>84</h>
+      <x>0</x>
+      <y>1180</y>
+      <w>280</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>LessonController
 --
@@ -544,23 +545,23 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>762</x>
-      <y>180</y>
-      <w>126</w>
-      <h>42</h>
+      <x>860</x>
+      <y>300</y>
+      <w>210</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
-DAO&lt;&gt;
+DAO&lt;Student&gt;
 --</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>816</x>
-      <y>108</y>
-      <w>84</w>
-      <h>84</h>
+      <x>950</x>
+      <y>180</y>
+      <w>140</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>120.0;10.0;10.0;120.0</additional_attributes>
@@ -568,10 +569,10 @@ DAO&lt;&gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>762</x>
-      <y>312</y>
-      <w>126</w>
-      <h>36</h>
+      <x>860</x>
+      <y>520</y>
+      <w>210</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>StudentDAO
 --
@@ -581,10 +582,10 @@ DAO&lt;&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>816</x>
-      <y>216</y>
-      <w>18</w>
-      <h>108</h>
+      <x>950</x>
+      <y>360</y>
+      <w>30</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
@@ -592,23 +593,23 @@ DAO&lt;&gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>906</x>
-      <y>180</y>
-      <w>126</w>
-      <h>42</h>
+      <x>1100</x>
+      <y>300</y>
+      <w>210</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
-DAO&lt;&gt;
+DAO&lt;Candidate&gt;
 --</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>882</x>
-      <y>108</y>
-      <w>96</w>
-      <h>84</h>
+      <x>1060</x>
+      <y>180</y>
+      <w>160</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;140.0;120.0</additional_attributes>
@@ -616,10 +617,10 @@ DAO&lt;&gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>906</x>
-      <y>312</y>
-      <w>126</w>
-      <h>36</h>
+      <x>1100</x>
+      <y>520</y>
+      <w>210</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>CandidateDAO
 --
@@ -629,10 +630,10 @@ DAO&lt;&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>960</x>
-      <y>216</y>
-      <w>18</w>
-      <h>108</h>
+      <x>1190</x>
+      <y>360</y>
+      <w>30</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
@@ -640,23 +641,23 @@ DAO&lt;&gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1050</x>
-      <y>180</y>
-      <w>126</w>
-      <h>42</h>
+      <x>1340</x>
+      <y>300</y>
+      <w>210</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
-DAO&lt;&gt;
+DAO&lt;Manager&gt;
 --</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>882</x>
-      <y>108</y>
-      <w>240</w>
-      <h>84</h>
+      <x>1060</x>
+      <y>180</y>
+      <w>400</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;380.0;120.0</additional_attributes>
@@ -664,10 +665,10 @@ DAO&lt;&gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1050</x>
-      <y>312</y>
-      <w>126</w>
-      <h>36</h>
+      <x>1340</x>
+      <y>520</y>
+      <w>210</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>ManagerDAO
 --
@@ -677,10 +678,10 @@ DAO&lt;&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1104</x>
-      <y>216</y>
-      <w>18</w>
-      <h>108</h>
+      <x>1430</x>
+      <y>360</y>
+      <w>30</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
