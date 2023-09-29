@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.1">
+<diagram program="umlet" version="13.3">
   <zoom_level>8</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>232</x>
+      <x>224</x>
       <y>152</y>
-      <w>64</w>
-      <h>88</h>
+      <w>80</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Candidate</panel_attributes>
     <additional_attributes/>
@@ -18,7 +18,7 @@
       <x>240</x>
       <y>696</y>
       <w>64</w>
-      <h>88</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Manager</panel_attributes>
     <additional_attributes/>
@@ -41,7 +41,7 @@ halign=left</panel_attributes>
       <x>232</x>
       <y>296</y>
       <w>48</w>
-      <h>88</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Tutor</panel_attributes>
     <additional_attributes/>
@@ -49,10 +49,10 @@ halign=left</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>248</x>
+      <x>240</x>
       <y>536</y>
-      <w>48</w>
-      <h>88</h>
+      <w>64</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Student</panel_attributes>
     <additional_attributes/>
@@ -123,18 +123,6 @@ halign=left</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>Submit Application
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>928</x>
-      <y>480</y>
-      <w>96</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>View Notifications
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -217,18 +205,6 @@ halign=left</panel_attributes>
     <panel_attributes>Basic
 Functionalities</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>792</x>
-      <y>448</y>
-      <w>152</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
