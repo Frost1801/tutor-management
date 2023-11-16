@@ -1,28 +1,19 @@
 package main.java.DomainModel.Users;
 
 public class Student extends User {
-    private String studentId;
-    private String degreeProgram;
-    private double GPA; // Grade Point Average
+    private String firstName;
+    private String lastName;
+    private String email;
+    private int year;
+    private char section;
 
-    public Student(String username, String password, String name, String email, String studentId, String degreeProgram, double GPA) {
-        super(username, password, name, email);
-        this.studentId = studentId;
-        this.degreeProgram = degreeProgram;
-        this.GPA = GPA;
+    public Student(String firstName, String lastName, String email, String password, int year, char section) {
+        super(firstName, lastName,  email, password);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.year = year;
+        this.section = section;
     }
 
-    public String getStudentId() {
-        return studentId;
-    }
-
-    public String getDegreeProgram() {
-        return degreeProgram;
-    }
-
-    public double getGPA() {
-        return GPA;
-    }
-
-    // You can add more methods and attributes as needed
 }

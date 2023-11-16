@@ -1,34 +1,16 @@
 package main.java.DomainModel.Users;
 
 public class Manager extends User {
+    private static Manager instance;
 
-    private String department;
-
-    // Constructor
-    public Manager(String username, String password, String email, String department) {
-        super(username, password, email);
-        this.department = department;
+    private Manager(String firstName, String lastName, String email, String password) {
+        super(firstName, lastName, email, password);
     }
 
-    // Getter and Setter methods for additional attributes
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    // Additional methods specific to Manager class can be added
-
-    // Override toString() method to provide a meaningful string representation
-    @Override
-    public String toString() {
-        return "Manager{" +
-                "username='" + getUsername() + '\'' +
-                ", email='" + getEmail() + '\'' +
-                ", department='" + department + '\'' +
-                '}';
+    public static Manager getInstance(String firstName, String lastName, String email, String password) {
+        if (instance == null) {
+            instance = new Manager(firstName, lastName, email, password);
+        }
+        return instance;
     }
 }

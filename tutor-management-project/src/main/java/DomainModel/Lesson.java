@@ -1,6 +1,7 @@
 package main.java.DomainModel;
 
 import java.time.LocalDateTime;
+import main.java.DomainModel.Users.Tutor;
 
 public class Lesson {
     private String subject;
@@ -18,42 +19,4 @@ public class Lesson {
         this.status = LessonStatus.SCHEDULED; // Default status is scheduled
     }
 
-    // Getter and Setter methods
-
-    public String getSubject() {
-        return subject;
-    }
-
-    public Tutor getTutor() {
-        return tutor;
-    }
-
-    public LocalDateTime getDateTime() {
-        return dateTime;
-    }
-
-    public int getMaxStudents() {
-        return maxStudents;
-    }
-
-    public LessonStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(LessonStatus status) {
-        this.status = status;
-    }
-
-    // Additional methods if needed
-
-    @Override
-    public String toString() {
-        return "Lesson{" +
-                "subject='" + subject + '\'' +
-                ", tutor=" + tutor +
-                ", dateTime=" + dateTime +
-                ", maxStudents=" + maxStudents +
-                ", status=" + status +
-                '}';
-    }
 }
