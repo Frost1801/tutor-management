@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS students;
 DROP TABLE IF EXISTS tutors;
 DROP TABLE IF EXISTS users;
 
+
 -- Users table
 CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -56,7 +57,6 @@ CREATE TABLE lessons (
     date_time DATETIME NOT NULL,
     max_students INTEGER NOT NULL,
     status TEXT NOT NULL,
-    PRIMARY KEY (id),
     FOREIGN KEY (tutor_id) REFERENCES tutors(id)
 );
 
@@ -66,6 +66,5 @@ CREATE TABLE applications (
     candidate_id INTEGER NOT NULL,
     subject TEXT NOT NULL,
     result TEXT NOT NULL,
-    PRIMARY KEY (id),
     FOREIGN KEY (candidate_id) REFERENCES candidates(id)
 );
