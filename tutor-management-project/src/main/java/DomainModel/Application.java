@@ -18,4 +18,8 @@ public class Application {
         this.result = result;
     }
 
+    public ApplicationResult getResult() {
+        return result;
+    }
+
 }
