@@ -41,6 +41,7 @@ public class StudentController implements UserController {
     public void addStudent(String firstName, String lastName, String email, String password, char section, int year) {
         // Your implementation for adding a new student
         Student newStudent = new Student(firstName, lastName, email, password, year, section);
+        //TODO prendi l'id dell'user e dal database e settalo a newStudent
         studentDAO.insert(newStudent);
     }
 }

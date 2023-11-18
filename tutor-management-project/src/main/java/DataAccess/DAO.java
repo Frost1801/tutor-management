@@ -1,16 +1,18 @@
 package main.java.DataAccess;
 
+import java.sql.SQLException;
 import java.util.List;
 
 // DAO.java
+//CRUD - Create Read Update Delete
 public interface DAO<T> {
-    T get(int id);
+    public T get(int id) throws SQLException;
 
-    List<T> getAll();
+    public List<T> getAll() throws SQLException;
 
-    int insert(T t);
+    public int insert(T t) throws SQLException;
 
-    int update(T t);
+    public int update(T t) throws SQLException;
 
-    int delete(T t);
+    public int delete(int id) throws SQLException;
 }

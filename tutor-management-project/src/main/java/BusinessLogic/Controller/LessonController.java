@@ -3,7 +3,7 @@ import main.java.BusinessLogic.Subject;
 import main.java.BusinessLogic.Observer;
 
 
-import main.java.DataAccess.LessonDAO; // Assuming the existence of LessonDAO class
+import main.java.DataAccess.LessonDAO; 
 import main.java.DomainModel.Lesson;
 import main.java.DomainModel.Users.Student;
 import main.java.DomainModel.Users.Tutor;
