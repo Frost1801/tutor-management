@@ -6,8 +6,12 @@ public class Candidate extends User {
     
 
     // Constructor
-    public Candidate(String firstName, String lastName, String email, String password, double GPA) {
-        super(firstName, lastName,  email, password);
+    public Candidate(int id, String firstName, String lastName, String email, String password, double GPA) {
+        super(id, firstName, lastName,  email, password);
         this.GPA = GPA;
+    }
+
+    public double getGPA() {
+        return GPA;
     }
 }

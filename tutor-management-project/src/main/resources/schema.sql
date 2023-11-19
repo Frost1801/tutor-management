@@ -37,6 +37,7 @@ CREATE TABLE tutors (
 -- Managers table
 CREATE TABLE managers (
     id INTEGER PRIMARY KEY,
+    otp INTEGER UNIQUE NOT NULL,
     FOREIGN KEY (id) REFERENCES users(id)
 );
 

@@ -2,16 +2,22 @@ package main.java.DomainModel.Users;
 
 public class Manager extends User {
     private static Manager instance;
+    private String OTP; 
 
     //private contstructor
-    private Manager(String firstName, String lastName, String email, String password) {
-        super(firstName, lastName, email, password);
+    private Manager(int id, String firstName, String lastName, String email, String password, String OTP) {
+        super(id, firstName, lastName,  email, password);
+        this.OTP = OTP;
     }
 
-    public static Manager getInstance(String firstName, String lastName, String email, String password) {
+    public static Manager getInstance(int id, String firstName, String lastName, String email, String password, String OTP) {
         if (instance == null) {
-            instance = new Manager(firstName, lastName, email, password);
+            instance = new Manager(id, firstName, lastName, email, password, OTP);
         }
         return instance;
+    }
+
+    public String getOTP() {
+        return OTP;
     }
 }
