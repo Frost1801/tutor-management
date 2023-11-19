@@ -29,7 +29,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>696</x>
-      <y>762</y>
+      <y>750</y>
       <w>132</w>
       <h>66</h>
     </coordinates>
@@ -50,7 +50,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>1086</x>
-      <y>942</y>
+      <y>930</y>
       <w>138</w>
       <h>72</h>
     </coordinates>
@@ -67,7 +67,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>336</x>
-      <y>942</y>
+      <y>930</y>
       <w>102</w>
       <h>54</h>
     </coordinates>
@@ -83,7 +83,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>978</x>
-      <y>384</y>
+      <y>372</y>
       <w>282</w>
       <h>96</h>
     </coordinates>
@@ -102,7 +102,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>828</x>
-      <y>942</y>
+      <y>930</y>
       <w>126</w>
       <h>72</h>
     </coordinates>
@@ -117,7 +117,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>Relation</id>
     <coordinates>
       <x>1146</x>
-      <y>912</y>
+      <y>900</y>
       <w>126</w>
       <h>156</h>
     </coordinates>
@@ -128,7 +128,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>570</x>
-      <y>1068</y>
+      <y>1056</y>
       <w>126</w>
       <h>72</h>
     </coordinates>
@@ -148,7 +148,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>1266</x>
-      <y>384</y>
+      <y>372</y>
       <w>234</w>
       <h>96</h>
     </coordinates>
@@ -169,7 +169,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>570</x>
-      <y>942</y>
+      <y>930</y>
       <w>126</w>
       <h>72</h>
     </coordinates>
@@ -186,7 +186,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>684</x>
-      <y>384</y>
+      <y>372</y>
       <w>288</w>
       <h>90</h>
     </coordinates>
@@ -202,7 +202,7 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
     <id>UMLClass</id>
     <coordinates>
       <x>2364</x>
-      <y>138</y>
+      <y>126</y>
       <w>126</w>
       <h>114</h>
     </coordinates>
@@ -222,7 +222,7 @@ DAO
     <id>UMLClass</id>
     <coordinates>
       <x>108</x>
-      <y>174</y>
+      <y>162</y>
       <w>126</w>
       <h>90</h>
     </coordinates>
@@ -242,7 +242,7 @@ DAO
     <id>Relation</id>
     <coordinates>
       <x>168</x>
-      <y>258</y>
+      <y>246</y>
       <w>18</w>
       <h>138</h>
     </coordinates>
@@ -253,7 +253,7 @@ DAO
     <id>UMLClass</id>
     <coordinates>
       <x>276</x>
-      <y>174</y>
+      <y>162</y>
       <w>126</w>
       <h>90</h>
     </coordinates>
@@ -271,7 +271,7 @@ DAO
     <id>Relation</id>
     <coordinates>
       <x>378</x>
-      <y>258</y>
+      <y>246</y>
       <w>18</w>
       <h>696</h>
     </coordinates>
@@ -282,7 +282,7 @@ DAO
     <id>UMLClass</id>
     <coordinates>
       <x>822</x>
-      <y>78</y>
+      <y>66</y>
       <w>222</w>
       <h>96</h>
     </coordinates>
@@ -301,7 +301,7 @@ DAO
     <id>UMLClass</id>
     <coordinates>
       <x>762</x>
-      <y>288</y>
+      <y>276</y>
       <w>126</w>
       <h>18</h>
     </coordinates>
@@ -312,7 +312,7 @@ DAO
     <id>UMLClass</id>
     <coordinates>
       <x>1020</x>
-      <y>288</y>
+      <y>276</y>
       <w>126</w>
       <h>18</h>
     </coordinates>
@@ -323,7 +323,7 @@ DAO
     <id>UMLClass</id>
     <coordinates>
       <x>1194</x>
-      <y>288</y>
+      <y>276</y>
       <w>120</w>
       <h>18</h>
     </coordinates>
@@ -334,7 +334,7 @@ DAO
     <id>UMLClass</id>
     <coordinates>
       <x>108</x>
-      <y>384</y>
+      <y>372</y>
       <w>192</w>
       <h>162</h>
     </coordinates>
@@ -359,7 +359,7 @@ DAO
     <id>UMLClass</id>
     <coordinates>
       <x>2280</x>
-      <y>426</y>
+      <y>414</y>
       <w>126</w>
       <h>30</h>
     </coordinates>
@@ -372,7 +372,7 @@ DAO&lt;Student&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2280</x>
-      <y>558</y>
+      <y>546</y>
       <w>126</w>
       <h>36</h>
     </coordinates>
@@ -385,7 +385,7 @@ DAO&lt;Student&gt;
     <id>Relation</id>
     <coordinates>
       <x>2334</x>
-      <y>450</y>
+      <y>438</y>
       <w>18</w>
       <h>120</h>
     </coordinates>
@@ -396,7 +396,7 @@ DAO&lt;Student&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2604</x>
-      <y>426</y>
+      <y>414</y>
       <w>126</w>
       <h>30</h>
     </coordinates>
@@ -409,7 +409,7 @@ DAO&lt;Application&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2580</x>
-      <y>558</y>
+      <y>546</y>
       <w>180</w>
       <h>42</h>
     </coordinates>
@@ -423,7 +423,7 @@ DAO&lt;Application&gt;
     <id>Relation</id>
     <coordinates>
       <x>2658</x>
-      <y>450</y>
+      <y>438</y>
       <w>18</w>
       <h>120</h>
     </coordinates>
@@ -434,7 +434,7 @@ DAO&lt;Application&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>828</x>
-      <y>1068</y>
+      <y>1056</y>
       <w>126</w>
       <h>78</h>
     </coordinates>
@@ -452,7 +452,7 @@ DAO&lt;Application&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>426</x>
-      <y>384</y>
+      <y>372</y>
       <w>252</w>
       <h>90</h>
     </coordinates>
@@ -471,7 +471,7 @@ DAO&lt;Application&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>600</x>
-      <y>288</y>
+      <y>276</y>
       <w>126</w>
       <h>18</h>
     </coordinates>
@@ -482,7 +482,7 @@ DAO&lt;Application&gt;
     <id>Relation</id>
     <coordinates>
       <x>606</x>
-      <y>468</y>
+      <y>456</y>
       <w>516</w>
       <h>66</h>
     </coordinates>
@@ -493,7 +493,7 @@ DAO&lt;Application&gt;
     <id>Relation</id>
     <coordinates>
       <x>624</x>
-      <y>1008</y>
+      <y>996</y>
       <w>18</w>
       <h>72</h>
     </coordinates>
@@ -504,7 +504,7 @@ DAO&lt;Application&gt;
     <id>Relation</id>
     <coordinates>
       <x>168</x>
-      <y>474</y>
+      <y>462</y>
       <w>900</w>
       <h>156</h>
     </coordinates>
@@ -516,7 +516,7 @@ DAO&lt;Application&gt;
     <id>Relation</id>
     <coordinates>
       <x>1104</x>
-      <y>474</y>
+      <y>462</y>
       <w>258</w>
       <h>60</h>
     </coordinates>
@@ -528,7 +528,7 @@ DAO&lt;Application&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>330</x>
-      <y>1080</y>
+      <y>1068</y>
       <w>126</w>
       <h>60</h>
     </coordinates>
@@ -547,7 +547,7 @@ Completed
     <id>Relation</id>
     <coordinates>
       <x>450</x>
-      <y>1098</y>
+      <y>1086</y>
       <w>132</w>
       <h>18</h>
     </coordinates>
@@ -558,7 +558,7 @@ Completed
     <id>Relation</id>
     <coordinates>
       <x>882</x>
-      <y>1008</y>
+      <y>996</y>
       <w>18</w>
       <h>72</h>
     </coordinates>
@@ -569,7 +569,7 @@ Completed
     <id>UMLClass</id>
     <coordinates>
       <x>1098</x>
-      <y>1092</y>
+      <y>1080</y>
       <w>126</w>
       <h>60</h>
     </coordinates>
@@ -585,7 +585,7 @@ Rejected</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>948</x>
-      <y>1110</y>
+      <y>1098</y>
       <w>162</w>
       <h>18</h>
     </coordinates>
@@ -596,7 +596,7 @@ Rejected</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1950</x>
-      <y>426</y>
+      <y>414</y>
       <w>126</w>
       <h>30</h>
     </coordinates>
@@ -609,7 +609,7 @@ DAO&lt;Lesson&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>1920</x>
-      <y>528</y>
+      <y>516</y>
       <w>180</w>
       <h>72</h>
     </coordinates>
@@ -628,7 +628,7 @@ DAO&lt;Lesson&gt;
     <id>Relation</id>
     <coordinates>
       <x>2004</x>
-      <y>450</y>
+      <y>438</y>
       <w>18</w>
       <h>90</h>
     </coordinates>
@@ -639,7 +639,7 @@ DAO&lt;Lesson&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2118</x>
-      <y>426</y>
+      <y>414</y>
       <w>126</w>
       <h>30</h>
     </coordinates>
@@ -652,7 +652,7 @@ DAO&lt;Manager&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2118</x>
-      <y>558</y>
+      <y>546</y>
       <w>126</w>
       <h>36</h>
     </coordinates>
@@ -665,7 +665,7 @@ DAO&lt;Manager&gt;
     <id>Relation</id>
     <coordinates>
       <x>2172</x>
-      <y>450</y>
+      <y>438</y>
       <w>18</w>
       <h>120</h>
     </coordinates>
@@ -676,7 +676,7 @@ DAO&lt;Manager&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2772</x>
-      <y>426</y>
+      <y>414</y>
       <w>126</w>
       <h>30</h>
     </coordinates>
@@ -689,7 +689,7 @@ DAO&lt;Candidate&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2772</x>
-      <y>558</y>
+      <y>546</y>
       <w>126</w>
       <h>36</h>
     </coordinates>
@@ -703,7 +703,7 @@ DAO&lt;Candidate&gt;
     <id>Relation</id>
     <coordinates>
       <x>2826</x>
-      <y>450</y>
+      <y>438</y>
       <w>18</w>
       <h>120</h>
     </coordinates>
@@ -714,7 +714,7 @@ DAO&lt;Candidate&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2442</x>
-      <y>426</y>
+      <y>414</y>
       <w>126</w>
       <h>30</h>
     </coordinates>
@@ -727,7 +727,7 @@ DAO&lt;Tutor&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>2442</x>
-      <y>558</y>
+      <y>546</y>
       <w>126</w>
       <h>36</h>
     </coordinates>
@@ -740,7 +740,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2496</x>
-      <y>450</y>
+      <y>438</y>
       <w>18</w>
       <h>120</h>
     </coordinates>
@@ -751,7 +751,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2418</x>
-      <y>246</y>
+      <y>234</y>
       <w>18</w>
       <h>102</h>
     </coordinates>
@@ -762,7 +762,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>228</x>
-      <y>540</y>
+      <y>528</y>
       <w>1788</w>
       <h>108</h>
     </coordinates>
@@ -773,7 +773,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>918</x>
-      <y>168</y>
+      <y>156</y>
       <w>18</w>
       <h>90</h>
     </coordinates>
@@ -784,7 +784,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1086</x>
-      <y>240</y>
+      <y>228</y>
       <w>18</w>
       <h>60</h>
     </coordinates>
@@ -795,7 +795,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>660</x>
-      <y>240</y>
+      <y>228</y>
       <w>606</w>
       <h>18</h>
     </coordinates>
@@ -806,7 +806,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1248</x>
-      <y>240</y>
+      <y>228</y>
       <w>18</w>
       <h>60</h>
     </coordinates>
@@ -817,7 +817,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>822</x>
-      <y>240</y>
+      <y>228</y>
       <w>18</w>
       <h>60</h>
     </coordinates>
@@ -828,7 +828,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>660</x>
-      <y>240</y>
+      <y>228</y>
       <w>18</w>
       <h>60</h>
     </coordinates>
@@ -839,7 +839,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1248</x>
-      <y>300</y>
+      <y>288</y>
       <w>90</w>
       <h>96</h>
     </coordinates>
@@ -850,7 +850,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1086</x>
-      <y>300</y>
+      <y>288</y>
       <w>18</w>
       <h>96</h>
     </coordinates>
@@ -861,7 +861,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>822</x>
-      <y>300</y>
+      <y>288</y>
       <w>18</w>
       <h>96</h>
     </coordinates>
@@ -872,7 +872,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>618</x>
-      <y>300</y>
+      <y>288</y>
       <w>66</w>
       <h>96</h>
     </coordinates>
@@ -883,7 +883,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>540</x>
-      <y>468</y>
+      <y>456</y>
       <w>1650</w>
       <h>216</h>
     </coordinates>
@@ -894,7 +894,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1380</x>
-      <y>66</y>
+      <y>54</y>
       <w>1632</w>
       <h>648</h>
     </coordinates>
@@ -905,7 +905,7 @@ DAO&lt;Tutor&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>1248</x>
-      <y>78</y>
+      <y>66</y>
       <w>222</w>
       <h>96</h>
     </coordinates>
@@ -921,7 +921,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1338</x>
-      <y>168</y>
+      <y>156</y>
       <w>18</w>
       <h>228</h>
     </coordinates>
@@ -932,7 +932,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>402</x>
-      <y>876</y>
+      <y>864</y>
       <w>732</w>
       <h>24</h>
     </coordinates>
@@ -943,7 +943,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>402</x>
-      <y>882</y>
+      <y>870</y>
       <w>18</w>
       <h>72</h>
     </coordinates>
@@ -954,7 +954,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>624</x>
-      <y>882</y>
+      <y>870</y>
       <w>18</w>
       <h>72</h>
     </coordinates>
@@ -965,7 +965,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>882</x>
-      <y>882</y>
+      <y>870</y>
       <w>18</w>
       <h>72</h>
     </coordinates>
@@ -976,7 +976,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1116</x>
-      <y>882</y>
+      <y>870</y>
       <w>18</w>
       <h>72</h>
     </coordinates>
@@ -987,7 +987,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>756</x>
-      <y>822</y>
+      <y>810</y>
       <w>18</w>
       <h>78</h>
     </coordinates>
@@ -998,7 +998,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2004</x>
-      <y>324</y>
+      <y>312</y>
       <w>846</w>
       <h>24</h>
     </coordinates>
@@ -1009,7 +1009,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2004</x>
-      <y>330</y>
+      <y>318</y>
       <w>18</w>
       <h>108</h>
     </coordinates>
@@ -1020,7 +1020,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2178</x>
-      <y>330</y>
+      <y>318</y>
       <w>18</w>
       <h>108</h>
     </coordinates>
@@ -1031,7 +1031,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2334</x>
-      <y>330</y>
+      <y>318</y>
       <w>18</w>
       <h>108</h>
     </coordinates>
@@ -1042,7 +1042,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2496</x>
-      <y>330</y>
+      <y>318</y>
       <w>18</w>
       <h>108</h>
     </coordinates>
@@ -1053,7 +1053,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2658</x>
-      <y>330</y>
+      <y>318</y>
       <w>18</w>
       <h>108</h>
     </coordinates>
@@ -1064,7 +1064,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>2832</x>
-      <y>330</y>
+      <y>318</y>
       <w>18</w>
       <h>108</h>
     </coordinates>
@@ -1075,7 +1075,7 @@ DAO&lt;Tutor&gt;
     <id>UMLPackage</id>
     <coordinates>
       <x>0</x>
-      <y>720</y>
+      <y>708</y>
       <w>1596</w>
       <h>450</h>
     </coordinates>
@@ -1086,7 +1086,7 @@ DAO&lt;Tutor&gt;
     <id>UMLPackage</id>
     <coordinates>
       <x>1620</x>
-      <y>114</y>
+      <y>102</y>
       <w>1596</w>
       <h>648</h>
     </coordinates>
@@ -1097,7 +1097,7 @@ DAO&lt;Tutor&gt;
     <id>UMLPackage</id>
     <coordinates>
       <x>0</x>
-      <y>54</y>
+      <y>42</y>
       <w>1596</w>
       <h>636</h>
     </coordinates>
@@ -1108,7 +1108,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>228</x>
-      <y>210</y>
+      <y>198</y>
       <w>60</w>
       <h>24</h>
     </coordinates>
@@ -1120,7 +1120,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>810</x>
-      <y>468</y>
+      <y>456</y>
       <w>1548</w>
       <h>258</h>
     </coordinates>
@@ -1131,7 +1131,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1182</x>
-      <y>468</y>
+      <y>456</y>
       <w>1332</w>
       <h>246</h>
     </coordinates>
@@ -1142,7 +1142,7 @@ DAO&lt;Tutor&gt;
     <id>Relation</id>
     <coordinates>
       <x>1356</x>
-      <y>12</y>
+      <y>0</y>
       <w>1746</w>
       <h>684</h>
     </coordinates>

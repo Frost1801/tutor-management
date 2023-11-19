@@ -16,7 +16,7 @@ public class StudentDAO implements DAO<Student> {
         Connection connection = Database.getConnection();
         Student student = null;
 
-        String sqlQueryText = "SELECT * FROM Student WHERE id = ?";
+        String sqlQueryText = "SELECT * FROM students WHERE id = ?";
         PreparedStatement ps = connection.prepareStatement(sqlQueryText);
         // setting the ? placeholder parameter
         ps.setInt(1, id);
@@ -65,7 +65,7 @@ public class StudentDAO implements DAO<Student> {
         Connection connection = Database.getConnection();
         
 
-        String sqlQueryText = "INSERT INTO Student (first_name, last_name, email, password, year, section) VALUES (?, ?, ?, ?, ?, ?)";
+        String sqlQueryText = "INSERT INTO students (first_name, last_name, email, password, year, section) VALUES (?, ?, ?, ?, ?, ?)";
 
         PreparedStatement ps = connection.prepareStatement(sqlQueryText, PreparedStatement.RETURN_GENERATED_KEYS);
         // setting parameters
@@ -101,7 +101,7 @@ public class StudentDAO implements DAO<Student> {
     public int update(Student student) throws SQLException {
         Connection connection = Database.getConnection();
 
-        String sqlQueryText = "UPDATE Student SET first_name = ?, last_name = ?, email = ?, password = ?, year = ?, section = ? WHERE id = ?";
+        String sqlQueryText = "UPDATE students SET first_name = ?, last_name = ?, email = ?, password = ?, year = ?, section = ? WHERE id = ?";
         PreparedStatement ps = connection.prepareStatement(sqlQueryText);
 
         // setting parameters
@@ -129,7 +129,7 @@ public class StudentDAO implements DAO<Student> {
     @Override
     public int delete(int id) throws SQLException {
         Connection connection = Database.getConnection();
-        String sqlQueryText = "DELETE FROM Student WHERE id = ?";
+        String sqlQueryText = "DELETE FROM students WHERE id = ?";
         PreparedStatement ps = connection.prepareStatement(sqlQueryText);
 
         // setting parameters
@@ -147,4 +147,6 @@ public class StudentDAO implements DAO<Student> {
 
         return rowsAffected;
     }
+
+    
 }
