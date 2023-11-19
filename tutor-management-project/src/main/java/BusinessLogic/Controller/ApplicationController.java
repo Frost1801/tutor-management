@@ -1,7 +1,7 @@
 package main.java.BusinessLogic.Controller;
 
-import main.java.DataAccess.ApplicationDAO; 
-import main.java.DataAccess.CandidateDAO; 
+import main.java.DataAccess.ApplicationDAO;
+import main.java.DataAccess.UsersDataAccess.CandidateDAO;
 import main.java.DomainModel.Application;
 import main.java.DomainModel.ApplicationResult;
 import main.java.DomainModel.Users.Candidate;

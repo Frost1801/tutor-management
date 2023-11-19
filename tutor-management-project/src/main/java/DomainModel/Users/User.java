@@ -1,11 +1,6 @@
 package main.java.DomainModel.Users;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import main.java.DomainModel.Lesson;
-
-public abstract class User {
+public class User {
     private int id;
     private String firstName;
     private String lastName;
@@ -42,4 +37,14 @@ public abstract class User {
         return email;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 }

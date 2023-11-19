@@ -18,4 +18,5 @@ public class Student extends User {
     public char getSection() {
         return section;
     }
+
 }

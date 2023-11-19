@@ -12,20 +12,11 @@ DROP TABLE IF EXISTS users;
 
 -- Users table
 CREATE TABLE users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY,
     first_name TEXT NOT NULL,
     last_name TEXT NOT NULL,
     email TEXT NOT NULL UNIQUE,
-    password TEXT NOT NULL,
-    user_type TEXT NOT NULL
-);
-
--- Tutors table
-CREATE TABLE tutors (
-    id INTEGER PRIMARY KEY,
-    subject TEXT NOT NULL,
-    hours INTEGER NOT NULL,
-    FOREIGN KEY (id) REFERENCES users(id)
+    password TEXT NOT NULL
 );
 
 -- Students table
@@ -33,6 +24,13 @@ CREATE TABLE students (
     id INTEGER PRIMARY KEY,
     year INTEGER NOT NULL,
     section TEXT NOT NULL,
+    FOREIGN KEY (id) REFERENCES users(id)
+);
+-- Tutors table
+CREATE TABLE tutors (
+    id INTEGER PRIMARY KEY,
+    subject TEXT NOT NULL,
+    hours INTEGER NOT NULL,
     FOREIGN KEY (id) REFERENCES users(id)
 );
 

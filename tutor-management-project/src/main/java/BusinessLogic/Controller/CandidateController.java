@@ -1,9 +1,9 @@
 package main.java.BusinessLogic.Controller;
 
 
-import main.java.DataAccess.CandidateDAO; // Assuming the existence of CandidateDAO class
 import main.java.DomainModel.Users.Candidate;
 import main.java.BusinessLogic.UserController;
+import main.java.DataAccess.UsersDataAccess.CandidateDAO;
 
 
 public class CandidateController implements UserController {

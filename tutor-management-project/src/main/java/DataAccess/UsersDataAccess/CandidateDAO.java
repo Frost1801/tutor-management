@@ -1,10 +1,11 @@
-package main.java.DataAccess;
+package main.java.DataAccess.UsersDataAccess;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
+import main.java.DataAccess.DAO;
 import main.java.DomainModel.Users.Candidate;
 
 public class CandidateDAO implements DAO<Candidate> {

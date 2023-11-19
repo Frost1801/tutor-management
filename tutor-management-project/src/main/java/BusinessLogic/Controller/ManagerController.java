@@ -1,8 +1,7 @@
 package main.java.BusinessLogic.Controller;
 
 import main.java.BusinessLogic.UserController;
-
-import main.java.DataAccess.ManagerDAO; // Assuming the existence of ManagerDAO class
+import main.java.DataAccess.UsersDataAccess.ManagerDAO;
 import main.java.DomainModel.Users.Manager;
 import main.java.DomainModel.ApplicationResult;
 

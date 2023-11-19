@@ -12,4 +12,12 @@ public class Tutor extends User {
         this.hours = hours;
     }
 
+    public String getSubject() {
+        return null;
+    }
+
+    public int getHours() {
+        return 0;
+    }
+
 }

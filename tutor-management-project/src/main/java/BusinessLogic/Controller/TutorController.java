@@ -1,9 +1,9 @@
 package main.java.BusinessLogic.Controller;
 
-import main.java.DataAccess.TutorDAO; // Assuming the existence of TutorDAO class
 import main.java.DomainModel.Users.Tutor;
 import main.java.DomainModel.Users.Candidate;
 import main.java.BusinessLogic.UserController;
+import main.java.DataAccess.UsersDataAccess.TutorDAO;
 
 public class TutorController implements UserController {
 
