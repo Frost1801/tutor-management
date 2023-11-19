@@ -38,7 +38,6 @@ public class LessonController implements Subject {
         notifyObservers(); // Notify observers about the deleted lesson
     }
 
-    // Other methods for LessonController
 
     @Override
     public void attach(Observer ob) {

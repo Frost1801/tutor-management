@@ -1,6 +1,7 @@
 package main.java.DataAccess.UsersDataAccess;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -141,4 +142,48 @@ public class UserDAO implements DAO<User> {
 
         return rowsAffected;
     }
+
+    public User getByEmail (String email) throws SQLException{
+        Connection connection = Database.getConnection();
+        User user = null;
+        String sqlQueryText = "SELECT * FROM users WHERE email = ?";
+        PreparedStatement ps = connection.prepareStatement(sqlQueryText);
+        // setting the ? placeholder parameter
+        ps.setString(1, email);
+        ResultSet rs = ps.executeQuery();
+
+        if (rs.next()) {
+            int id = rs.getInt("id");
+            String firstName = rs.getString("first_name");
+            String lastName = rs.getString("last_name");
+            String password = rs.getString("password");
+
+            user = new User(id, firstName, lastName, email, password);
+        }
+
+
+
+        ps.close();
+        connection.close();
+        return user;
+    }
+
+    public int getNextId() throws SQLException {
+        Connection connection = Database.getConnection();
+        String query = "SELECT MAX(ID) FROM users";
+        PreparedStatement statement = connection.prepareStatement(query);
+        ResultSet rs = statement.executeQuery();
+        int id; 
+        if (rs.next()) {
+            id = rs.getInt(1) + 1;
+        } else {
+            id = 1;
+        }
+
+        rs.close();
+        statement.close();
+        connection.close();
+        return id;
+    }
+
 }

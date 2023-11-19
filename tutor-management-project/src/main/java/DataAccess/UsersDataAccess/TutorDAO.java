@@ -14,7 +14,7 @@ import main.java.DomainModel.Users.User;
 
 public class TutorDAO implements DAO<Tutor> {
 
-    UserDAO userDAO = new UserDAO();
+    public UserDAO userDAO = new UserDAO();
 
     @Override
     public Tutor get(int id) throws SQLException {

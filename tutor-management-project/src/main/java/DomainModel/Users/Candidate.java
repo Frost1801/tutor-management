@@ -1,6 +1,7 @@
 package main.java.DomainModel.Users;
+import main.java.BusinessLogic.Observer;
 
-public class Candidate extends User {
+public class Candidate extends User implements Observer{
 
     private double GPA;
     
@@ -13,5 +14,10 @@ public class Candidate extends User {
 
     public double getGPA() {
         return GPA;
+    }
+
+    @Override
+    public void update() {
+        System.out.println("Candidate " + this.getFirstName() + " " + this.getLastName() + " has been upgraded to tutor");
     }
 }

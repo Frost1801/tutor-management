@@ -1,5 +1,7 @@
 package main.java.BusinessLogic.Controller;
 
+import java.sql.SQLException;
+
 import main.java.DataAccess.ApplicationDAO;
 import main.java.DataAccess.UsersDataAccess.CandidateDAO;
 import main.java.DomainModel.Application;
@@ -17,17 +19,26 @@ public class ApplicationController {
     }
 
     public void addApplication(int candidateID, String subject, String school, float avg) {
-        // Your implementation for adding a new application
-        Candidate candidate = candidateDAO.get(candidateID);
-        if (candidate != null) {
-            Application newApplication = new Application(candidate, subject);
-            applicationDAO.insert(newApplication);
+        try {
+            int id = applicationDAO.getNextId();
+            Candidate candidate = candidateDAO.get(candidateID);
+            if (candidate != null) {
+                Application newApplication = new Application(id, candidate, subject);
+                applicationDAO.insert(newApplication);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
     public ApplicationResult viewStatus(int applicationID) {
-        // Your implementation for viewing the status of an application
-        Application application = applicationDAO.get(applicationID);
-        return (application != null) ? application.getResult() : null;
+        try {
+            // Your implementation for viewing the status of an application
+            Application application = applicationDAO.get(applicationID);
+            return (application != null) ? application.getResult() : null;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

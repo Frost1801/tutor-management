@@ -144,4 +144,23 @@ public class ApplicationDAO implements DAO<Application> {
 
         return rowsAffected;
     }
+
+    public int getNextId() throws SQLException {
+        Connection connection = Database.getConnection();
+        String query = "SELECT MAX(ID) FROM applicationss";
+        PreparedStatement statement = connection.prepareStatement(query);
+        ResultSet rs = statement.executeQuery();
+        int id; 
+        if (rs.next()) {
+            id = rs.getInt(1) + 1;
+        } else {
+            id = 1;
+        }
+
+        rs.close();
+        statement.close();
+        connection.close();
+        return id;
+    }
+
 }
