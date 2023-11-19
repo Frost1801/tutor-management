@@ -1,6 +1,8 @@
 package main.java.DomainModel.Users;
 
-public class Student extends User {
+import main.java.BusinessLogic.Observer;
+
+public class Student extends User implements Observer {
     private int year;
     private char section;
 
@@ -17,6 +19,11 @@ public class Student extends User {
 
     public char getSection() {
         return section;
+    }
+
+    @Override
+    public void update() {
+        System.out.println("Student " + this.getFirstName() + " " + this.getLastName() + " has been notified.");
     }
 
 }

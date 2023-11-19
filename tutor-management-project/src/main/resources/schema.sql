@@ -50,7 +50,7 @@ CREATE TABLE candidates (
 
 -- Lessons table
 CREATE TABLE lessons (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY,
     tutor_id INTEGER NOT NULL,
     subject TEXT NOT NULL,
     date_time DATETIME NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE lessons (
 
 -- Applications table
 CREATE TABLE applications (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY,
     candidate_id INTEGER NOT NULL,
     subject TEXT NOT NULL,
     result TEXT NOT NULL,

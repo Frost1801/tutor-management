@@ -32,6 +32,9 @@ public class UserDAO implements DAO<User> {
 
             user = new User(id, firstName, lastName, email, password);
         }
+
+        ps.close();
+        connection.close();
         return user;
     }
 
@@ -54,6 +57,8 @@ public class UserDAO implements DAO<User> {
             User user = new User(userId, firstName, lastName, email, password);
             users.add(user);
         }
+        rs.close();
+        connection.close();
 
         return users;
     }
@@ -80,7 +85,8 @@ public class UserDAO implements DAO<User> {
         } else if (rowsAffected > 1) {
             throw new SQLException("User insertion failed, too many rows affected.");
         }
-    
+        
+
         // Close the connection
         connection.close();
     
