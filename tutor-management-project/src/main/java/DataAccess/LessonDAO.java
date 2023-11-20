@@ -19,62 +19,39 @@ public class LessonDAO implements DAO<Lesson> {
     public Lesson get(int id) throws SQLException {
         Connection connection = Database.getConnection();
         Lesson lesson = null;
-
+    
         String sqlQueryText = "SELECT * FROM lessons WHERE id = ?";
         PreparedStatement ps = connection.prepareStatement(sqlQueryText);
         ps.setInt(1, id);
         ResultSet rs = ps.executeQuery();
-
+    
         if (rs.next()) {
-            TutorDAO tutorDAO = new TutorDAO();
-            int tutorId = rs.getInt("tutor_id");
-            Tutor tutor = tutorDAO.get(tutorId);
-
-            String subject = rs.getString("subject");
-            LocalDateTime dateTime = rs.getObject("date_time", LocalDateTime.class);
-            int maxStudents = rs.getInt("max_students");
-            LessonStatus status = LessonStatus.valueOf(rs.getString("status"));
-
-            lesson = new Lesson(id, subject, tutor, dateTime, maxStudents);
-            lesson.setStatus(status);
+            lesson = mapResultSetToLesson(rs);
         }
-
+    
         ps.close();
         connection.close();
-
+    
         return lesson;
     }
-
+    
     @Override
     public List<Lesson> getAll() throws SQLException {
         Connection connection = Database.getConnection();
         List<Lesson> lessons = new ArrayList<>();
-
+    
         String sqlQueryText = "SELECT * FROM lessons";
         ResultSet rs = connection.createStatement().executeQuery(sqlQueryText);
-
+    
         while (rs.next()) {
-            TutorDAO tutorDAO = new TutorDAO();
-            int lessonId = rs.getInt("id");
-            int tutorId = rs.getInt("tutor_id");
-            Tutor tutor = tutorDAO.get(tutorId);
-
-            String subject = rs.getString("subject");
-            LocalDateTime dateTime = rs.getObject("date_time", LocalDateTime.class);
-            int maxStudents = rs.getInt("max_students");
-            LessonStatus status = LessonStatus.valueOf(rs.getString("status"));
-
-            Lesson lesson = new Lesson(lessonId, subject, tutor, dateTime, maxStudents);
-            lesson.setStatus(status);
-
+            Lesson lesson = mapResultSetToLesson(rs);
             lessons.add(lesson);
         }
-
+    
         connection.close();
-
+    
         return lessons;
     }
-
     @Override
     public int insert(Lesson lesson) throws SQLException {
         Connection connection = Database.getConnection();
@@ -153,4 +130,87 @@ public class LessonDAO implements DAO<Lesson> {
 
         return rowsAffected;
     }
+
+    public int getNextId() throws SQLException {
+        Connection connection = Database.getConnection();
+        String query = "SELECT MAX(ID) FROM lessons";
+        PreparedStatement statement = connection.prepareStatement(query);
+        ResultSet rs = statement.executeQuery();
+        int id; 
+        if (rs.next()) {
+            id = rs.getInt(1) + 1;
+        } else {
+            id = 1;
+        }
+
+        rs.close();
+        statement.close();
+        connection.close();
+        return id;
+    }
+
+    public List<Lesson> getLessonsByDate(LocalDateTime date) {
+        Connection connection = Database.getConnection();
+        List<Lesson> lessons = new ArrayList<>();
+
+        try {
+            String sqlQueryText = "SELECT * FROM lessons WHERE date_time = ?";
+            PreparedStatement ps = connection.prepareStatement(sqlQueryText);
+            ps.setObject(1, date);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                lessons.add(mapResultSetToLesson(rs));
+            }
+
+            ps.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Handle the exception as needed
+        }    
+
+        return lessons;
+    }
+
+    public List<Lesson> getLessonsBySubject(String subject) {
+        Connection connection = Database.getConnection();
+        List<Lesson> lessons = new ArrayList<>();
+
+        try {
+            String sqlQueryText = "SELECT * FROM lessons WHERE subject = ?";
+            PreparedStatement ps = connection.prepareStatement(sqlQueryText);
+            ps.setString(1, subject);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                lessons.add(mapResultSetToLesson(rs));
+            }
+
+            ps.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Handle the exception as needed
+        } 
+        return lessons;
+    }
+
+        // Helper method to map ResultSet to Lesson
+        private Lesson mapResultSetToLesson(ResultSet rs) throws SQLException {
+            TutorDAO tutorDAO = new TutorDAO();
+            int lessonId = rs.getInt("id");
+            int tutorId = rs.getInt("tutor_id");
+            Tutor tutor = tutorDAO.get(tutorId);
+    
+            String subject = rs.getString("subject");
+            LocalDateTime dateTime = rs.getObject("date_time", LocalDateTime.class);
+            int maxStudents = rs.getInt("max_students");
+            LessonStatus status = LessonStatus.valueOf(rs.getString("status"));
+    
+            Lesson lesson = new Lesson(lessonId, subject, tutor, dateTime, maxStudents);
+            lesson.setStatus(status);
+    
+            return lesson;
+        }
 }

@@ -16,10 +16,4 @@ public interface DAO<T> {
 
     public int delete(int id) throws SQLException;
 
-    /* 
-     * TODO 
-     * Fare un UserDAO generale che si occupa di inserire i parametri comuni a tutti gli utenti
-     * Fixare l'id degli user in modo che combaci in tutte le tabelle che li rigaurdano
-     * 
-     */
 }

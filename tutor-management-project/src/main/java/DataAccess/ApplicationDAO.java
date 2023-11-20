@@ -147,7 +147,7 @@ public class ApplicationDAO implements DAO<Application> {
 
     public int getNextId() throws SQLException {
         Connection connection = Database.getConnection();
-        String query = "SELECT MAX(ID) FROM applicationss";
+        String query = "SELECT MAX(ID) FROM applications";
         PreparedStatement statement = connection.prepareStatement(query);
         ResultSet rs = statement.executeQuery();
         int id; 

@@ -42,5 +42,7 @@ public class Lesson {
     public void setStatus(LessonStatus status) {
         this.status = status;
     }
-
+    public void setDateTime(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
+    }
 }

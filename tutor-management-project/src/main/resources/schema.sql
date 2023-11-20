@@ -67,3 +67,13 @@ CREATE TABLE applications (
     result TEXT NOT NULL,
     FOREIGN KEY (candidate_id) REFERENCES candidates(id)
 );
+
+--junction table for lessons and students
+-- StudentLessons table
+CREATE TABLE student_lessons (
+    student_id INTEGER NOT NULL,
+    lesson_id INTEGER NOT NULL,
+    PRIMARY KEY (student_id, lesson_id),
+    FOREIGN KEY (student_id) REFERENCES students(id),
+    FOREIGN KEY (lesson_id) REFERENCES lessons(id)
+);

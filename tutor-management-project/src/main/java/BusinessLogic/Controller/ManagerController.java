@@ -11,7 +11,6 @@ import main.java.DomainModel.ApplicationResult;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -49,8 +48,6 @@ public class ManagerController extends UserController implements Subject{
 
 public Map<Integer, Double> getAllDuePayments(int rate) {
 
-    // Your implementation for viewing all due payments
-    // Example: Access payment information from the database
 
     List<Tutor> tutors = tutorController.getAllTutors();
     Map<Integer, Double> duePayments = new HashMap<>();
@@ -68,8 +65,7 @@ public Map<Integer, Double> getAllDuePayments(int rate) {
 
 
 public Map <Integer, Double> getDuePaymentByID(int id, int rate) {
-    // Your implementation for viewing due payment by ID
-    // Example: Access payment information from the database based on ID
+
 
     Tutor tutor = tutorController.getTutor(id);
     Map <Integer, Double> duePayment = new HashMap<>();
