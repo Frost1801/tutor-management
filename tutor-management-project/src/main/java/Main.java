@@ -1,4 +1,6 @@
 package main.java;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -15,10 +17,13 @@ import main.java.DomainModel.Users.Candidate;
 import main.java.DomainModel.Users.Manager;
 import main.java.DomainModel.Users.Student;
 import main.java.DomainModel.Users.Tutor;
+import test.java.Utils.DatabaseUtils;
+import test.java.Utils.TestUtils;
 
 public class Main {
     public static void main(String[] args) {
-        //Student test = new Student(111, "John", "Doe", "te1s1@gmail.com", "password", 1, 'A');
+        /* 
+        //Student test = new Student(111, "Mario", "Doe", "te1s1@gmail.com", "password", 1, 'A');
         StudentDAO studentDAO = new StudentDAO();
         //Tutor test2 = new Tutor(215, "Ciles", "Doe", "tefst@hgaha.com", "password", "Meth");
         TutorDAO tutorDAO = new TutorDAO();
@@ -26,10 +31,13 @@ public class Main {
         CandidateDAO candidateDAO = new CandidateDAO();
         //Manager test = Manager.getInstance(87558, "Ciruzzo", "Esposito", "laziocapitale@gmail.cum", "lamaggica", "1323");
         ManagerDAO managerDAO = new ManagerDAO();
-        //test = Manager.getInstance(766, "Gianmacco", "Akkappaqarantasetti", "orrom@gmail.cum", "password", "246");
+        //test = Manager.getInstance(766, "Gianmacco", "Akkappaqarantasetti", "fortnite@gmail.cum", "password", "246");
         ApplicationDAO applicationDAO = new ApplicationDAO();
         LessonDAO lessonDAO = new LessonDAO();
         
+
+        
+
         try {
             //studentDAO.insert(test);
             //tutorDAO.insert(test2);
@@ -71,5 +79,11 @@ public class Main {
             e.printStackTrace();
         }
 
+    
+    */
+    //DatabaseUtils.dropSchema();
+    DatabaseUtils.createSchema();
+    
+    
     }
 }

@@ -16,8 +16,13 @@ public class Candidate extends User implements Observer{
         return GPA;
     }
 
+    public void setGPA(double gPA) {
+        GPA = gPA;
+    }
+
     @Override
     public void update() {
         System.out.println("Candidate " + this.getFirstName() + " " + this.getLastName() + " has been upgraded to tutor");
     }
+
 }
