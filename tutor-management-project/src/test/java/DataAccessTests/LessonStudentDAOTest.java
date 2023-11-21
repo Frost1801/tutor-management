@@ -25,8 +25,22 @@ public class LessonStudentDAOTest {
 
     @BeforeEach
     public void setUp() {
-        lessonStudentDAO = new LessonStudentDAO();
         DatabaseUtils.createSchema();
+        Tutor tutor = new Tutor(1, "John", "Doe", "john.doe@example.com", "password", "Math");
+        Lesson lesson = new Lesson (1, "Math", tutor, LocalDateTime.parse("2019-03-27T10:15:30") ,  maxStudents);
+
+        TutorDAO tutorDAO = new TutorDAO();
+        LessonDAO lessonDAO = new LessonDAO();
+        try{
+            tutorDAO.insert(tutor);
+            lessonDAO.insert(lesson);
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+
+        lessonStudentDAO = new LessonStudentDAO();
+        
     }
 
     @AfterEach
@@ -39,14 +53,6 @@ public class LessonStudentDAOTest {
         // Given
         int studentId = 1;
         int lessonId = 1;
-        Tutor tutor = new Tutor(1, "John", "Doe", "john.doe@example.com", "password", "Math");
-        Lesson lesson = new Lesson (1, "Math", tutor, LocalDateTime.parse("2019-03-27T10:15:30") ,  maxStudents);
-
-        TutorDAO tutorDAO = new TutorDAO();
-        LessonDAO lessonDAO = new LessonDAO();
-
-        tutorDAO.insert(tutor);
-        lessonDAO.insert(lesson);
 
         // When
         boolean booked = lessonStudentDAO.bookLesson(lessonId, studentId);
@@ -58,15 +64,7 @@ public class LessonStudentDAOTest {
 
     @Test
     public void testCancelBooking() throws SQLException {
-        Tutor tutor = new Tutor(1, "John", "Doe", "john.doe@example.com", "password", "Math");
-        Lesson lesson = new Lesson (1, "Math", tutor, LocalDateTime.parse("2019-03-27T10:15:30") ,  maxStudents);
 
-        TutorDAO tutorDAO = new TutorDAO();
-        LessonDAO lessonDAO = new LessonDAO();
-
-        tutorDAO.insert(tutor);
-        lessonDAO.insert(lesson);
-        
         // Given
         int studentId = 1;
         int lessonId = 1;
@@ -82,6 +80,7 @@ public class LessonStudentDAOTest {
 
     @Test
     public void testBookLessonNoAvailableSpots() throws SQLException {
+        
         // Given
         int studentId = 1;
         int lessonId = 1;
