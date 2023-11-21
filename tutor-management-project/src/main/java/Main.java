@@ -7,6 +7,7 @@ import java.util.List;
 
 import main.java.DataAccess.ApplicationDAO;
 import main.java.DataAccess.LessonDAO;
+import main.java.DataAccess.LessonStudentDAO;
 import main.java.DataAccess.UsersDataAccess.CandidateDAO;
 import main.java.DataAccess.UsersDataAccess.ManagerDAO;
 import main.java.DataAccess.UsersDataAccess.StudentDAO;
@@ -22,7 +23,7 @@ import test.java.Utils.TestUtils;
 
 public class Main {
     public static void main(String[] args) {
-        /* 
+        
         //Student test = new Student(111, "Mario", "Doe", "te1s1@gmail.com", "password", 1, 'A');
         StudentDAO studentDAO = new StudentDAO();
         //Tutor test2 = new Tutor(215, "Ciles", "Doe", "tefst@hgaha.com", "password", "Meth");
@@ -78,11 +79,8 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        
 
-    
-    */
-    //DatabaseUtils.dropSchema();
-    DatabaseUtils.createSchema();
     
     
     }

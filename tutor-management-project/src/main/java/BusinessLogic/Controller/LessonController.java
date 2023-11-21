@@ -131,7 +131,7 @@ public class LessonController  {
             if (lesson != null  && lesson.getStatus() == LessonStatus.SCHEDULED) {
                 int remainingSpots = getRemainingSpots(lessonId);
                 if (remainingSpots > 0) {
-                    lessonStudentDAO.bookLesson(studentId, lessonId);
+                    lessonStudentDAO.bookLesson(lessonId, studentId);
                     return true;
                 }
             }
@@ -143,7 +143,7 @@ public class LessonController  {
 
     public boolean cancelBooking(int studentId, int lessonId) {
         try {
-            if (lessonStudentDAO.cancelBooking(studentId, lessonId)) {
+            if (lessonStudentDAO.cancelBooking(lessonId, studentId)) {
                 return true;
             }
         } catch (SQLException e) {

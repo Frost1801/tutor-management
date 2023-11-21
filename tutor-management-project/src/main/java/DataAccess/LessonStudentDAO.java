@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class LessonStudentDAO {
 
-    public boolean bookLesson(int studentId, int lessonId) throws SQLException{
+    public boolean bookLesson(int lessonId, int studentId) throws SQLException{
         Connection connection = Database.getConnection();
 
         // Check if the lesson has available spots
@@ -29,7 +29,7 @@ public class LessonStudentDAO {
         }
     }
 
-    public boolean cancelBooking(int studentId, int lessonId) throws SQLException{
+    public boolean cancelBooking(int lessonId, int studentId) throws SQLException{
 
         Connection connection = Database.getConnection();
 
@@ -50,9 +50,8 @@ public class LessonStudentDAO {
     public int getRemainingSpots(int lessonId) throws SQLException{
         Connection connection = Database.getConnection();
 
-        String sqlQueryText = "SELECT max_students - COUNT(*) AS remaining_spots FROM lessons " +
-                                "LEFT JOIN student_lessons ON lessons.id = student_lessons.lesson_id " +
-                                "WHERE lessons.id = ?";
+        String sqlQueryText = "SELECT COUNT(*) AS remaining_spots FROM student_lessons " +
+                                "WHERE lesson_id = ?";
         PreparedStatement ps = connection.prepareStatement(sqlQueryText);
 
         ps.setInt(1, lessonId);
@@ -67,7 +66,8 @@ public class LessonStudentDAO {
         rs.close();
         ps.close();
         connection.close();
-
-        return remainingSpots;
+        LessonDAO lessonDAO = new LessonDAO();
+        int maxStudents = lessonDAO.get(lessonId).getMaxStudents();
+        return maxStudents- remainingSpots;
     }
 }
