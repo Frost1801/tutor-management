@@ -20,4 +20,7 @@ public class Manager extends User {
     public String getOTP() {
         return OTP;
     }
+    public void setOTP(String OTP) {
+        this.OTP = OTP;
+    }
 }

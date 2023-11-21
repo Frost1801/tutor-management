@@ -26,4 +26,8 @@ public class Student extends User implements Observer {
         System.out.println("Student " + this.getFirstName() + " " + this.getLastName() + " has been notified.");
     }
 
+    public void setYear(int year) {
+        this.year = year;
+    }
+
 }

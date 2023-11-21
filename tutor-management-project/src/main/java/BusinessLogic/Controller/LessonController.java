@@ -1,12 +1,10 @@
 package main.java.BusinessLogic.Controller;
 
 import main.java.BusinessLogic.Observer;
-import main.java.BusinessLogic.Subject;
 import main.java.DataAccess.LessonDAO;
 import main.java.DataAccess.LessonStudentDAO;
 import main.java.DomainModel.Lesson;
 import main.java.DomainModel.LessonStatus;
-import main.java.DomainModel.Users.Student;
 import main.java.DomainModel.Users.Tutor;
 
 import java.sql.SQLException;
