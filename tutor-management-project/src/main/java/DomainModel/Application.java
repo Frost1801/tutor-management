@@ -4,10 +4,9 @@ import main.java.DomainModel.Users.Candidate;
 
 public class Application {
     private int id; 
-    private Candidate candidate;
     private String subject;
     private ApplicationResult result;
-
+    private Candidate candidate;
     // Constructor
     public Application(int id, Candidate applicant, String subject) {
         this.id = id;

@@ -3,14 +3,15 @@ package main.java.DomainModel;
 import java.time.LocalDateTime;
 import main.java.DomainModel.Users.Tutor;
 
+//represents a single lesson
+
 public class Lesson {
     private int id;
     private String subject;
-    private Tutor tutor;
     private LocalDateTime dateTime;
     private int maxStudents;
     private LessonStatus status;
-
+    private Tutor tutor;
     // Constructor
     public Lesson(int id, String subject, Tutor tutor, LocalDateTime dateTime, int maxStudents) {
         this.id = id;
