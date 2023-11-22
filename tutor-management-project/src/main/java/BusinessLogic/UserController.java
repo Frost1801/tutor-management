@@ -8,7 +8,7 @@ import main.java.DomainModel.Users.User;
 
 public class UserController {
 
-    protected UserDAO userDAO;
+    protected UserDAO userDAO = new UserDAO();
 
     public boolean removeUser(int id){
         try {
