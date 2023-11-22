@@ -27,6 +27,17 @@ public class TutorController extends UserController {
             e.printStackTrace(); 
         }
     }
+
+    public void addTutor (Tutor tutor) {
+        try {
+            int id = userDAO.getNextId();
+            tutor.setId(id);
+            tutorDAO.insert(tutor);
+        } catch (SQLException e) {
+            e.printStackTrace(); 
+        }
+    }
+
     //when a candidate is upgraded to tutor
     public void addTutor(Candidate candidate) {
         try {

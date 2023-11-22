@@ -34,5 +34,4 @@ public class Tutor extends User {
     public void setHours(int hours) {
         this.hours = hours;
     }
-
 }

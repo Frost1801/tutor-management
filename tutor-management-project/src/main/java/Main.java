@@ -18,8 +18,7 @@ import main.java.DomainModel.Users.Candidate;
 import main.java.DomainModel.Users.Manager;
 import main.java.DomainModel.Users.Student;
 import main.java.DomainModel.Users.Tutor;
-import test.java.Utils.DatabaseUtils;
-import test.java.Utils.TestUtils;
+
 
 public class Main {
     public static void main(String[] args) {
