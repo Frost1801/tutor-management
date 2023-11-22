@@ -14,11 +14,10 @@ public class TutorController extends UserController {
     private TutorDAO tutorDAO;
     private CandidateDAO candidateDAO;
 
-    public TutorController(TutorDAO tutorDAO) {
+    public TutorController(TutorDAO tutorDAO, CandidateDAO candidateDAO) {
         this.tutorDAO = tutorDAO;
+        this.candidateDAO = candidateDAO;
     }
-
-    // Additional methods specific to TutorController
     public void addTutor(String firstName, String lastName, String email, String password, String subject, int hours) {
         try {
             int id = userDAO.getNextId();
