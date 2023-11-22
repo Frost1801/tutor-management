@@ -28,6 +28,7 @@ public class ManagerController extends UserController implements Subject{
     public ManagerController(ManagerDAO managerDAO, ApplicationDAO applicationDAO, TutorController tutorController) {
         this.managerDAO = managerDAO;
         this.tutorController = tutorController;
+        this.applicationDAO = applicationDAO;
     }
 
 
@@ -132,4 +133,7 @@ public void sendApplicationResult(int id, ApplicationResult result) {
         }
     }
 
+    public List<Observer> getObservers() {
+        return observers;
+    }
 }

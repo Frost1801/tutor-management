@@ -57,7 +57,7 @@ public class ManagerDAOTest {
         managerDAO.insert(manager);
 
         // When
-        manager.setOTP("654321");
+        manager.setOTP("1234");
         managerDAO.update(manager);
         Manager updatedManager = managerDAO.get(1);
 
