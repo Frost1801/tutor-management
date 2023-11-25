@@ -14,7 +14,7 @@ import main.java.DomainModel.ApplicationResult;
 import main.java.DomainModel.Users.Candidate;
 
 public class ApplicationDAO implements DAO<Application> {
-    CandidateDAO candidateDAO = new CandidateDAO();
+    public CandidateDAO candidateDAO = new CandidateDAO();
 
 
     @Override

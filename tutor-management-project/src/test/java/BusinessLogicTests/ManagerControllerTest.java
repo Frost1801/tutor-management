@@ -138,7 +138,7 @@ class ManagerControllerTest {
         candidateController.addCandidate(firstName, lastName, email + "m", password, gpa);
         Candidate candidate = candidateController.getCandidate(2);
 
-        ApplicationController applicationController = new ApplicationController(applicationDAO, candidateDAO);
+        ApplicationController applicationController = new ApplicationController(applicationDAO);
         applicationController.addApplication(2, "Math", "High School", 90.0f);
 
         assertNotNull(candidate);

@@ -22,14 +22,12 @@ public class ApplicationControllerTest {
 
     private ApplicationController applicationController;
     private ApplicationDAO applicationDAO;
-    private CandidateDAO candidateDAO;
 
     @BeforeEach
     public void setUp() {
         DatabaseUtils.createSchema();
         applicationDAO = new ApplicationDAO();
-        candidateDAO = new CandidateDAO();
-        applicationController = new ApplicationController(applicationDAO, candidateDAO);
+        applicationController = new ApplicationController(applicationDAO);
 
         // Insert a candidate for testing
         Candidate candidate = new Candidate(1, "John", "Doe", "john.doe@example.com", "password", 4.0);

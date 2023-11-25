@@ -21,9 +21,10 @@ import main.java.BusinessLogic.Subject;
 public class ManagerController extends UserController implements Subject{
 
     private ManagerDAO managerDAO;
-    private TutorController tutorController;
     private ApplicationDAO applicationDAO;
+    
     private List<Observer> observers = new ArrayList<>();
+    private TutorController tutorController;
 
     public ManagerController(ManagerDAO managerDAO, ApplicationDAO applicationDAO, TutorController tutorController) {
         this.managerDAO = managerDAO;
