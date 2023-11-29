@@ -24,14 +24,14 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>5</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>615</x>
-      <y>345</y>
-      <w>110</w>
-      <h>75</h>
+      <x>798</x>
+      <y>217</y>
+      <w>154</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Abstract&gt;&gt;
 **/User/**
@@ -49,10 +49,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>940</x>
-      <y>520</y>
-      <w>115</w>
-      <h>45</h>
+      <x>1253</x>
+      <y>462</y>
+      <w>161</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>**Manager**
 --
@@ -66,10 +66,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>315</x>
-      <y>520</y>
-      <w>85</w>
-      <h>45</h>
+      <x>378</x>
+      <y>462</y>
+      <w>119</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>**Student**
 --
@@ -82,10 +82,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
-      <y>460</y>
-      <w>105</w>
-      <h>155</h>
+      <x>1323</x>
+      <y>378</y>
+      <w>147</w>
+      <h>217</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;210.0;10.0;290.0;190.0;290.0;190.0;10.0;10.0;10.0;10.0;120.0</additional_attributes>
@@ -93,10 +93,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>270</y>
-      <w>15</w>
-      <h>170</h>
+      <x>525</x>
+      <y>112</y>
+      <w>21</w>
+      <h>238</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;320.0</additional_attributes>
@@ -104,10 +104,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>370</x>
-      <y>455</y>
-      <w>610</w>
-      <h>20</h>
+      <x>455</x>
+      <y>371</y>
+      <w>854</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;20.0;1200.0;20.0</additional_attributes>
@@ -115,10 +115,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>370</x>
-      <y>460</y>
-      <w>15</w>
-      <h>70</h>
+      <x>455</x>
+      <y>378</y>
+      <w>21</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
@@ -126,10 +126,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>555</x>
-      <y>460</y>
-      <w>15</w>
-      <h>70</h>
+      <x>714</x>
+      <y>378</y>
+      <w>21</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
@@ -137,10 +137,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>460</y>
-      <w>15</w>
-      <h>70</h>
+      <x>1015</x>
+      <y>378</y>
+      <w>21</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
@@ -148,10 +148,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>965</x>
-      <y>460</y>
-      <w>15</w>
-      <h>70</h>
+      <x>1288</x>
+      <y>378</y>
+      <w>21</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
@@ -159,10 +159,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>665</x>
-      <y>415</y>
-      <w>15</w>
-      <h>60</h>
+      <x>868</x>
+      <y>315</y>
+      <w>21</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -170,10 +170,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>210</x>
-      <y>245</y>
-      <w>1220</w>
-      <h>530</h>
+      <x>231</x>
+      <y>77</y>
+      <w>1708</w>
+      <h>742</h>
     </coordinates>
     <panel_attributes>fontsize=35
 **Domain Model**</panel_attributes>
@@ -182,10 +182,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>520</y>
-      <w>105</w>
-      <h>45</h>
+      <x>651</x>
+      <y>462</y>
+      <w>147</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>**Candidate**
 --
@@ -197,10 +197,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>625</y>
-      <w>105</w>
-      <h>50</h>
+      <x>651</x>
+      <y>609</y>
+      <w>147</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>**Application**
 --
@@ -216,10 +216,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>555</x>
-      <y>560</y>
-      <w>15</w>
-      <h>75</h>
+      <x>714</x>
+      <y>518</y>
+      <w>21</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
@@ -227,10 +227,10 @@ fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>625</y>
-      <w>105</w>
-      <h>50</h>
+      <x>427</x>
+      <y>609</y>
+      <w>147</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enumeration&gt;&gt;
 **ApplicationResult**
@@ -243,10 +243,10 @@ Rejected</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
-      <y>640</y>
-      <w>70</w>
-      <h>15</h>
+      <x>567</x>
+      <y>630</y>
+      <w>98</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
@@ -254,13 +254,14 @@ Rejected</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>730</x>
-      <y>620</y>
-      <w>100</w>
-      <h>55</h>
+      <x>959</x>
+      <y>602</y>
+      <w>140</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>**Lesson**
 --
+-id: int
 -dateTime: LocalDateTime 
 -subject : String
 -maxStudents: int
@@ -274,10 +275,10 @@ Rejected</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>725</x>
-      <y>520</y>
-      <w>100</w>
-      <h>45</h>
+      <x>952</x>
+      <y>462</y>
+      <w>140</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>**Tutor**
 --
@@ -291,10 +292,10 @@ Rejected</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>560</y>
-      <w>15</w>
-      <h>70</h>
+      <x>1015</x>
+      <y>518</y>
+      <w>21</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
@@ -302,10 +303,10 @@ Rejected</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>870</x>
-      <y>620</y>
-      <w>70</w>
-      <h>55</h>
+      <x>1155</x>
+      <y>602</y>
+      <w>98</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enumeration&gt;&gt;
 **LessonStatus**
@@ -321,10 +322,10 @@ Completed
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>825</x>
-      <y>635</y>
-      <w>55</w>
-      <h>15</h>
+      <x>1092</x>
+      <y>623</y>
+      <w>77</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
@@ -332,10 +333,10 @@ Completed
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>425</y>
-      <w>185</w>
-      <h>15</h>
+      <x>427</x>
+      <y>329</y>
+      <w>259</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;350.0;10.0</additional_attributes>
@@ -343,10 +344,10 @@ Completed
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>425</y>
-      <w>15</w>
-      <h>105</h>
+      <x>665</x>
+      <y>329</y>
+      <w>21</w>
+      <h>147</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
@@ -354,10 +355,10 @@ Completed
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>425</y>
-      <w>15</w>
-      <h>105</h>
+      <x>427</x>
+      <y>329</y>
+      <w>21</w>
+      <h>147</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
