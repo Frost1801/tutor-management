@@ -1,9 +1,10 @@
 package main.java.DomainModel.Users;
 
 public class Manager extends User {
-    private static Manager instance;
+    
     private String OTP; 
-
+    
+    private static Manager instance;
     //private contstructor
     private Manager(int id, String firstName, String lastName, String email, String password, String OTP) {
         super(id, firstName, lastName,  email, password);

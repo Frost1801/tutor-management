@@ -32,21 +32,29 @@ public class ManagerController extends UserController implements Subject{
         this.applicationDAO = applicationDAO;
     }
 
-
-    // Additional methods specific to ManagerController
     public void addManager(String firstName, String lastName, String email, String password, String OTP) {
         try {
-            int id = userDAO.getNextId();
-            Manager newManager = Manager.getInstance(id, firstName, lastName, email, password, OTP);
+            // Check if the provided OTP is valid (compare with the predefined OTP)
+            if (isValidOTP(OTP)) {
+                int id = userDAO.getNextId();
+                Manager newManager = Manager.getInstance(id, firstName, lastName, email, password, OTP);
     
-            // Insert manager into the managers table
-            managerDAO.insert(newManager);
-
+                // Insert manager into the managers table
+                managerDAO.insert(newManager);
+            } else {
+                throw new IllegalArgumentException("Error: Invalid OTP.");            
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-    
+
+    private boolean isValidOTP(String providedOTP) {
+        String predefinedOTP = "1234";
+        return predefinedOTP.equals(providedOTP);
+    }
+
+
 
 public Map<Integer, Double> getAllDuePayments(int rate) {
 

@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import main.java.BusinessLogic.Controller.StudentController;
 import main.java.DataAccess.ApplicationDAO;
 import main.java.DataAccess.LessonDAO;
 import main.java.DataAccess.LessonStudentDAO;
@@ -23,7 +24,7 @@ import main.java.DomainModel.Users.Tutor;
 public class Main {
     public static void main(String[] args) {
         
-        //Student test = new Student(111, "Mario", "Doe", "te1s1@gmail.com", "password", 1, 'A');
+        Student test = new Student(111, "Mario", "Doe", "te1s1@gmail.com", "password", 1, 'A');
         StudentDAO studentDAO = new StudentDAO();
         //Tutor test2 = new Tutor(215, "Ciles", "Doe", "tefst@hgaha.com", "password", "Meth");
         TutorDAO tutorDAO = new TutorDAO();
@@ -39,7 +40,14 @@ public class Main {
         
 
         try {
-            //studentDAO.insert(test);
+            StudentController studentController = new StudentController(studentDAO);
+            studentController.addStudent("Mario", "Doe", "te1@gmail.com", "password",  'A', 1);
+
+            List <Student> students = studentDAO.getAll();
+            for (Student student : students) {
+                System.out.println(student);
+            }
+
             //tutorDAO.insert(test2);
             //candidateDAO.insert(test);
             //managerDAO.insert(test);
@@ -47,11 +55,9 @@ public class Main {
             Lesson l = new Lesson(1, "Math", tutorDAO.get(212), LocalDateTime.now(), 5);
 
             //applicationDAO.insert(apptest);
-            lessonDAO.insert(l);
-            List<Student> students = studentDAO.getAll();
-            for (Student student : students) {
-                System.out.println(student);
-            }
+            //lessonDAO.insert(l);
+
+            
             List<Tutor> tutors = tutorDAO.getAll();
             for (Tutor tutor : tutors) {
                 System.out.println(tutor);
@@ -75,6 +81,7 @@ public class Main {
             for (Lesson lesson : lessons) {
                 System.out.println(lesson);
             }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

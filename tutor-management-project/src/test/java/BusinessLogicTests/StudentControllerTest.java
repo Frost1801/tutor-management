@@ -36,7 +36,7 @@ public class StudentControllerTest {
         // Given
         String firstName = "John";
         String lastName = "Doe";
-        String email = "john.doe@example.com";
+        String email = "john.doe@russell-newton.edu.it";
         String password = "password";
         char section = 'A';
         int year = 2;

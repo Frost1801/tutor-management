@@ -82,7 +82,7 @@ public class LessonController  {
                 notifyObservers(id); // Notify observers about the updated lesson
             }
         } catch (SQLException e) {
-            e.printStackTrace(); // Handle the exception according to your application's needs
+            e.printStackTrace(); 
         }
     }
     

@@ -30,7 +30,6 @@ public class ApplicationController {
 
     public ApplicationResult viewStatus(int applicationID) {
         try {
-            // Your implementation for viewing the status of an application
             Application application = applicationDAO.get(applicationID);
             return (application != null) ? application.getResult() : null;
         } catch (SQLException e) {
